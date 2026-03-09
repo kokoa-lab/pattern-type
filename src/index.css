@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 180 100% 95%;
+
+    --card: 240 10% 8%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 240 10% 8%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 175 100% 50%;
+    --primary-foreground: 240 10% 4%;
+
+    --secondary: 280 100% 65%;
+    --secondary-foreground: 240 10% 4%;
+
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 55%;
+
+    --accent: 320 100% 60%;
+    --accent-foreground: 240 10% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 15%;
+    --ring: 175 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --neon-glow: 0 0 20px hsl(175 100% 50% / 0.5), 0 0 40px hsl(175 100% 50% / 0.3);
+    --neon-glow-secondary: 0 0 20px hsl(280 100% 65% / 0.5), 0 0 40px hsl(280 100% 65% / 0.3);
+    --gradient-cyber: linear-gradient(135deg, hsl(175 100% 50%), hsl(280 100% 65%));
+    --gradient-card: linear-gradient(180deg, hsl(240 10% 10%), hsl(240 10% 6%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: var(--neon-glow);
+  }
+
+  .text-glow-secondary {
+    text-shadow: var(--neon-glow-secondary);
+  }
+
+  .box-glow {
+    box-shadow: var(--neon-glow);
+  }
+
+  .box-glow-secondary {
+    box-shadow: var(--neon-glow-secondary);
+  }
+
+  .gradient-text {
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+}
