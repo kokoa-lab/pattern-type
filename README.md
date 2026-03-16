@@ -2,7 +2,7 @@
 
 > 12개의 코딩 상황 질문을 통해 당신의 코딩 성격을 7가지 디자인 패턴 중 하나로 진단하는 심리테스트
 
-🔗 **사이트**: [pattern-type.코딩.kr](https://pattern-type.xn--hy1by51c.kr/)  
+🔗 **사이트**: [pattern-type.코드.kr](https://pattern-type.xn--hy1by51c.kr/)  
 📦 **GitHub**: [github.com/kokoa-lab/pattern-type](https://github.com/kokoa-lab/pattern-type)  
 👤 **개발자**: [@shinkeonkim](https://github.com/shinkeonkim)
 
